@@ -12,7 +12,7 @@ A proposta deste código é ser executada em um ambiente serverless, então sua 
 
 * Configurado **Resource Group**
 * Configurado **Azure API Gateway** para o endpoint `POST /cpf/validate`
-* Configurado **Azure Account Integration** (demorei um pouco para encontrar como fazer isso)
+* Configurado **Azure Account Integration** 
 * Foi criada uma instância do **APP Logic**, e suas configurações foram alteradas para utilizar a **Account Integration**.
 
 ### Implementação
