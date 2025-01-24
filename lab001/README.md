@@ -11,7 +11,8 @@ A proposta deste código é ser executada em um ambiente serverless, então sua 
 Para configurar o service no portal AZURE é necessário fazer algumas configurações.
 
 * Configurar **Resource Group**
-* Configurar **Azure API Gateway** para o endpoint `POST /cpf/validate`
+* Configurar **Azure API Gateway** para o endpoint `POST /cpf/validate`.
+  * O endpoint deve estar exposto para internet!
 * Configurar **Azure Account Integration** 
 * Criar uma instância do **APP Logic**, e alterar a configuração para utilizar o **Account Integration**.
 
