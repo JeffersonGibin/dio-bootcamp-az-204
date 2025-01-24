@@ -6,8 +6,6 @@
 
 A proposta deste código é ser executada em um ambiente serverless, então sua implementação deve ser bem simples.
 
-### O que foi feito?
-
 #### Pré-requisitos
 
 Para configurar o service no portal AZURE é necessário fazer algumas configurações.
