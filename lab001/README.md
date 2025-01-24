@@ -15,7 +15,7 @@ Para configurar o service no portal AZURE é necessário fazer algumas configura
 * Configurar **Resource Group**
 * Configurar **Azure API Gateway** para o endpoint `POST /cpf/validate`
 * Configurar **Azure Account Integration** 
-* Criar uma instância do **APP Logic**, e suas configurações foram alteradas para utilizar a **Account Integration**.
+* Criar uma instância do **APP Logic**, e alterar a configuração para utilizar o **Account Integration**.
 
 ### Workflow
 
