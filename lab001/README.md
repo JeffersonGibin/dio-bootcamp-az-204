@@ -1,6 +1,6 @@
 ## LAB 001
 
-- RFC01: Criando um Microsserviço Serverless para Validação de CPF
+- **RFC01:** Criando um Microsserviço Serverless para Validação de CPF
 
 ## Introdução
 
