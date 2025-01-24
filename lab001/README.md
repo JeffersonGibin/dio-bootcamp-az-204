@@ -10,12 +10,14 @@ A proposta deste código é ser executada em um ambiente serverless, então sua 
 
 #### Pré-requisitos
 
-* Configurado **Resource Group**
-* Configurado **Azure API Gateway** para o endpoint `POST /cpf/validate`
-* Configurado **Azure Account Integration** 
-* Foi criada uma instância do **APP Logic**, e suas configurações foram alteradas para utilizar a **Account Integration**.
+Para configurar o service no portal AZURE é necessário fazer algumas configurações.
 
-### Implementação
+* Configurar **Resource Group**
+* Configurar **Azure API Gateway** para o endpoint `POST /cpf/validate`
+* Configurar **Azure Account Integration** 
+* Criar uma instância do **APP Logic**, e suas configurações foram alteradas para utilizar a **Account Integration**.
+
+### Workflow
 
 * **Step Trigger**: "When an HTTP request is received"
 * **Step**: "Execute JavaScript Code" (o código deste repositório deve ser usado aqui)
