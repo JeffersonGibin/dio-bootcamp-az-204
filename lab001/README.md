@@ -1,6 +1,18 @@
 ## LAB 001
 
-- **RFC01:** Criando um Microsserviço Serverless para Validação de CPF
+### Requisito Funcional
+
+| ID       | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| RF-001   | Criando um Microsserviço Serverless para Validação de CPF                 |
+
+### Requisito não Funcional
+
+| ID       | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| RNF-001   | Configurar Azure API Gateway                                             |
+| RNF-002    | Configurar Azure App Logic                                               |
+
 
 ## Introdução
 
