@@ -21,3 +21,7 @@ Para configurar o service no portal AZURE é necessário fazer algumas configura
 * **Step Trigger**: "When an HTTP request is received"
 * **Step**: "Execute JavaScript Code" (o código deste repositório deve ser usado aqui)
 * **Step**: Response
+
+### Arquitetura 
+![image](https://github.com/user-attachments/assets/b77a7cfe-cbe7-46e4-8afe-14c86c621a4e)
+
