@@ -1,10 +1,12 @@
 # LAB 002
 
-## Objetivos
+**Requisitos Funcionais**
+  - **RF 01:** Implementar uma API simples para ser usada no processo de deploy.
+    
+**Requisitos Não Funcionais**
 
-- **RFC 01:** Implementar uma API simples para ser usada no processo de deploy.
-- **RF 01:** Criar imagem docker e persistir no Azure Container Registry
-- **RF 02:** Fazer o deploy de uma imagem do ACR para o Azure App Service
+- **RNF 01:** Criar imagem docker e persistir no Azure Container Registry
+- **RNF 02:** Fazer o deploy de uma imagem do ACR para o Azure App Service
 
 ---
 
