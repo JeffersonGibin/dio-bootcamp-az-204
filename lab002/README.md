@@ -24,3 +24,8 @@ Este repositório faz parte da entrega do **LAB 002** do Bootcamp **Microsoft Ce
 - Configurar **Service Connections** para o Docker Registry.
 - Configurar o pipeline.
 - Configurar pipeline **Self-Hosted**.
+
+
+### Arquitetura
+
+![image](https://github.com/user-attachments/assets/4ce1c083-2931-475a-a341-6395b53ab457)
