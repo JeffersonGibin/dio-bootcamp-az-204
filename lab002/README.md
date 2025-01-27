@@ -28,6 +28,8 @@ Este repositório faz parte da entrega do **LAB 002** do Bootcamp **Microsoft Ce
 
 ### Arquitetura
 
-![image](https://github.com/user-attachments/assets/ead2f5d2-ce54-485d-9dc9-b193b470a965)
+![image](https://github.com/user-attachments/assets/f55fb763-a1d9-4105-a43c-2dd3feb16f65)
+
+
 
 
