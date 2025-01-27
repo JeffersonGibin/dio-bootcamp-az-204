@@ -1,20 +1,22 @@
 # LAB 002
 
-**Requisitos Funcionais**
-  - **RF 01:** Implementar uma API simples para ser usada no processo de deploy.
-    
-**Requisitos Não Funcionais**
-
-- **RNF 01:** Criar imagem docker e persistir no Azure Container Registry
-- **RNF 02:** Fazer o deploy de uma imagem do ACR para o Azure App Service
-
----
-
 ## Introdução
 
 Este repositório faz parte da entrega do **LAB 002** do Bootcamp **Microsoft Certification AZ-204**.
 
----
+#### Requisito Funcional
+
+| ID       | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| RF-001   | Implementar uma API simples para ser usada no processo de deploy                 |
+
+#### Requisito não Funcional
+
+| ID       | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| RNF-001   | Criar imagem docker e persistir no Azure Container Registryy                                             |
+| RNF-002    | Enviar uma imagem do ACR para o Azure App Service automaticamente                                             |
+
 
 ## Configurações na Nuvem
 
