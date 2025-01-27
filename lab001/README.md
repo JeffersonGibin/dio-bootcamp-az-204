@@ -14,7 +14,7 @@ A proposta deste código é ser executada em um ambiente serverless, então sua 
 
 | ID       | Descrição                                                                 |
 |----------|---------------------------------------------------------------------------|
-| RNF-001   | Configurar Azure API Gateway                                             |
+| RNF-001   | Configurar Azure API Gateway para um endpoint                                           |
 | RNF-002    | Configurar Azure App Logic                                               |
 
 
