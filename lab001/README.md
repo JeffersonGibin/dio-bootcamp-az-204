@@ -1,5 +1,9 @@
 ## LAB 001
 
+## Introdução
+
+A proposta deste código é ser executada em um ambiente serverless, então sua implementação deve ser bem simples.
+
 ### Requisito Funcional
 
 | ID       | Descrição                                                                 |
@@ -13,10 +17,6 @@
 | RNF-001   | Configurar Azure API Gateway                                             |
 | RNF-002    | Configurar Azure App Logic                                               |
 
-
-## Introdução
-
-A proposta deste código é ser executada em um ambiente serverless, então sua implementação deve ser bem simples.
 
 #### Pré-requisitos
 
