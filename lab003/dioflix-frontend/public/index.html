@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DioFlix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-4">
+      <h1 class="text-center mb-4">DioFlix - Catalogo</h1>
+      <div class="row" id="cardContainer"></div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="detailModal"
+      tabindex="-1"
+      aria-labelledby="detailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailModalLabel">Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalDescription">Description</p>
+            <div class="ratio ratio-16x9">
+              <video id="modalVideo" controls>
+                <source src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const API_URL = "https://dioflix.azure-api.net/movies";
+      const GET_MOVIE_DATAILS = "fnGetMovieDetail";
+      const GET_ALL_MOVIES_RESOURCE = "fnGetAllMovies";
+      const getData = async (url) => {
+        try {
+          const response = await fetch(url, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("Error fetching movies:", error);
+          return null;
+        }
+      };
+
+      (async () => {
+        const url = `${API_URL}/${GET_ALL_MOVIES_RESOURCE}`;
+        const movies = await getData(url);
+
+        const cardContainer = document.getElementById("cardContainer");
+
+        (movies.data ?? []).forEach((movie) => {
+          const card = document.createElement("div");
+          card.className = "col-md-4 mb-4";
+          card.setAttribute("data-id", movie.id);
+          card.innerHTML = `
+            <div class="card medium-card" style="cursor: pointer; margin: 5px;">
+              <img src="${movie.thumb}" alt="${movie.title}" class="card-img-top" style="width: 100%; height: 250px; object-fit: cover; border-radius: 5px;">
+              <div class="card-body" style="padding: 5px; text-align: center;">
+                <h5 class="card-title" style="font-size: 0.8rem; font-weight: 500; margin: 5px 0; color: #000; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                  ${movie.title}
+                </h5>
+              </div>
+            </div>
+        `;
+          card.addEventListener("click", () => {
+            const dataId = card.getAttribute("data-id");
+            showDetails(dataId);
+          });
+          cardContainer.appendChild(card);
+        });
+
+        async function showDetails(id) {
+          const searchParams = new URLSearchParams({
+            id,
+          });
+
+          const url = `${API_URL}/${GET_MOVIE_DATAILS}?${searchParams.get(
+            "id"
+          )}`;
+
+          const movie = await getData(url);
+          const modalTitle = document.getElementById("detailModalLabel");
+          const modalDescription = document.getElementById("modalDescription");
+          const modalVideo = document.getElementById("modalVideo");
+
+          modalTitle.textContent = movie.title;
+          modalDescription.textContent = movie.description;
+          modalVideo.querySelector("source").src = movie.video;
+          modalVideo.load();
+
+          const modal = new bootstrap.Modal(
+            document.getElementById("detailModal")
+          );
+
+          modal.show();
+        }
+      })();
+    </script>
+  </body>
+</html>
