@@ -5,6 +5,14 @@
 
 Este repositório faz parte da entrega do **LAB 003** do Bootcamp **Microsoft Certification AZ-204**.
 
+
+
+| Repositorio       | Descrição                                                                 |
+|----------|---------------------------------------------------------------------------|
+| front-end  | Contém o front-end do catálogo.                    |
+| back-end  | Contém todas as Azure Functions do projeto                       |
+
+
 #### Requisito Funcional
 
 | ID       | Descrição                                                                 |
@@ -31,12 +39,6 @@ Este repositório faz parte da entrega do **LAB 003** do Bootcamp **Microsoft Ce
 
 ![image](https://github.com/user-attachments/assets/b4d78acf-873a-4058-a66d-fbc2b9323521)
 
-
-
-| Repositorio       | Descrição                                                                 |
-|----------|---------------------------------------------------------------------------|
-| front-end  | Contém o front-end do catálogo.                    |
-| back-end  | Contém todas as Azure Functions do projeto                       |
 
 
 
